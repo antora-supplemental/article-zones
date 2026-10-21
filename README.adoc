@@ -16,3 +16,12 @@ antora:
 ----
 
 Register **before** `page-edit` and `linkinator`. Requires a theme that declares `[data-zone="body"]` and `[data-zone="meta"]` (Valentus `article.hbs`).
+
+== Page TOC contract (zoned articles)
+
+Default UI `site.js` and aside TOC rebuilders scan section headings for the right-rail **Contents** list. When prose lives inside a body wrapper (not direct children of `article.doc`), mark the scan root explicitly:
+
+* `[data-page-toc-root]` on the element that contains section headings (Valentus sets this on the same node as `[data-zone="body"]`).
+* Page title `h1` may sit in `[data-zone="header"]` (or `[data-page-toc-title]`).
+
+Valentus ships `site-page-toc.js` (`window.ValentusPageToc.rebuild`) after `site.js`. `@antora-supplemental/soft-nav-page-toc` calls the same API after SoftNav swaps. Selector helpers live in `soft-nav-page-toc` `lib/page-toc-selectors.js`.

@@ -1,5 +1,9 @@
 = Changelog
 
+== 0.1.2 — 2026-10-21
+
+* **Docs:** page TOC contract — `[data-page-toc-root]` / `[data-zone="body"]` scan root; pairs with Valentus `site-page-toc.js` and `soft-nav-page-toc`.
+
 == 0.1.1 — 2026-10-21
 
 * **Docs:** README notes *article segmenter* / *article splitter* as informal names; npm package stays `@antora-supplemental/article-zones`.
