@@ -1,0 +1,16 @@
+= article-zones
+
+Antora extension that relocates semantic chrome from the article **body** zone into the **meta** zone after UI compose.
+
+== Playbook
+
+[source,yaml]
+----
+antora:
+  extensions:
+    - '@antora-supplemental/article-zones'
+    - '@antora-supplemental/page-edit'
+    - '@antora-supplemental/linkinator'
+----
+
+Register **before** `page-edit` and `linkinator`. Requires a theme that declares `[data-zone="body"]` and `[data-zone="meta"]` (Valentus `article.hbs`).

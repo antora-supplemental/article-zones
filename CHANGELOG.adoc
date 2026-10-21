@@ -1,0 +1,6 @@
+= Changelog
+
+== 0.1.0 — 2026-10-21
+
+* **`pagesComposed` segmentation:** when `[data-zone="body"]` is present, move a leading `.page-context.page-context-lead` aside into `[data-zone="meta"]` so linkinator and other bolt-ons can target body prose only.
+* **HTML contract:** pairs with Valentus zoned `article.hbs` (`data-zone-root`, header / meta / body / footer zones).
