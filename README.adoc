@@ -2,6 +2,8 @@
 
 Antora extension that relocates semantic chrome from the article **body** zone into the **meta** zone after UI compose.
 
+Also called an *article segmenter* or *article splitter* in design notes — the npm package name stays `@antora-supplemental/article-zones`.
+
 == Playbook
 
 [source,yaml]

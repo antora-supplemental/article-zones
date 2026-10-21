@@ -1,5 +1,9 @@
 = Changelog
 
+== 0.1.1 — 2026-10-21
+
+* **Docs:** README notes *article segmenter* / *article splitter* as informal names; npm package stays `@antora-supplemental/article-zones`.
+
 == 0.1.0 — 2026-10-21
 
 * **`pagesComposed` segmentation:** when `[data-zone="body"]` is present, move a leading `.page-context.page-context-lead` aside into `[data-zone="meta"]` so linkinator and other bolt-ons can target body prose only.

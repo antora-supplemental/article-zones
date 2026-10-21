@@ -1,6 +1,6 @@
 {
   "name": "@antora-supplemental/article-zones",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Antora extension: relocate semantic article chrome from the body zone into theme meta/header zones",
   "main": "lib/index.js",
   "exports": {
